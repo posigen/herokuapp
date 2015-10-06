@@ -6,7 +6,8 @@
  */
 var nodemailer = require('nodemailer');
 var randomstring = require("randomstring");
-var emailhostname = 'http://localhost:1337/';
+//var emailhostname = 'http://localhost:1337/';
+var emailhostname = 'http://posigen.herokuapp.com/';
 
 module.exports = {
 	
