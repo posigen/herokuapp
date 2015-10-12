@@ -1,3 +1,3 @@
 # herokuapp
 
-a [Sails](http://sailsjs.org) application
+[Appcino](http://www.appcino.com) heroku application

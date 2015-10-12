@@ -63,11 +63,6 @@ $(function () {
 
 
 
-/** ******  tooltip  *********************** **/
-$(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-    /** ******  /tooltip  *********************** **/
     /** ******  progressbar  *********************** **/
 if ($(".progress .progress-bar")[0]) {
     $('.progress .progress-bar').progressbar(); // bootstrap 3
@@ -217,7 +212,7 @@ var __slice = [].slice;
 })(window.jQuery, window);
 
 $(function () {
-    return $(".starrr").starrr();
+    //return $(".starrr").starrr();
 });
 
 $(document).ready(function () {

@@ -19,7 +19,7 @@ module.exports.models = {
   ***************************************************************************/
   // connection: 'localDiskDb',
 		connection: 'somePostgresqlServer',
-		migrate: 'alter'
+		migrate: 'safe'
 
   /***************************************************************************
   *                                                                          *

@@ -27,9 +27,16 @@ module.exports = {
 	    		  }
 	    		  res.view('pages/verifyReset',{hash: emailhash});
 			});
-			
 		
 		res.view('pages/profile');
-	}
+	},
+
+    users: function(req, res) {
+    	
+    	Users.find().exec(function(err, users) {
+		        res.view('pages/users',{data:users});
+		});
+    	
+    }
 };
 

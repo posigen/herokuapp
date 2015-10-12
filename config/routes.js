@@ -84,9 +84,54 @@ module.exports.routes = {
 		controller: 'UserController',
 		action: 'profile'
 	},
-	'get /profile': {
+	'post /profile': {
 		controller: 'UserController',
 		action: 'profileSave'
+	},
+	'get /users': {
+		controller: 'UserController',
+		action: 'users'
+	},
+	'get /locusauthentication': {
+		controller: 'LocusAuthenticationController',
+		action: 'locusAuth'
+	},
+	'post /locusauthentication': {
+		controller: 'LocusAuthenticationController',
+		action: 'processLocusAuth'
+	},
+	'get /roles': {
+		controller: 'RoleController',
+		action: 'roles',
+		view: 'pages/roles/roles'
+	},
+	'get /roles/edit/:id': {
+		controller: 'RoleController',
+		action: 'edit'
+	},
+	'post /updateRole': {
+		controller: 'RoleController',
+		action: 'update'
+	},
+	'get /roles/delete/:id': {
+		controller: 'RoleController',
+		action: 'deleteObj'
+	},
+	'post /addRole': {
+		controller: 'RoleController',
+		action: 'add'
+	},
+	'get /loadLocusData': {
+		controller: 'LocusDataLoaderController',
+		action: 'run'
+	},
+	'get /loadLocusDataForSites': {
+		controller: 'LocusDataLoaderController',
+		action: 'runSites'
+	},
+	'get /updateModelSettingForSites': {
+		controller: 'LocusDataLoaderController',
+		action: 'updateModelSettingForSites'
 	}
 
 };

@@ -15,7 +15,6 @@ module.exports = {
     	} else {
     		res.view();
     	}
-        
     },
     process: function(req, res) {
         passport.authenticate('local', function(err, user, info) {
